@@ -8,6 +8,9 @@ body {
   max-width: 800px;
   margin: auto;
 }
+body{
+  background-image: url('https://static.wikia.nocookie.net/jujutsu-kaisen/images/8/80/Idle_Death_Gamble.png/revision/latest?cb=20220530005018');
+}
 
 /* navigation menu */
 nav {
@@ -135,3 +138,28 @@ h3 {
           justify-content: center;
         }
     }
+    .content h1 {
+      color: black;
+  }
+
+  #portfolio {
+      list-style-type: none;
+      padding-left: 0;
+  }
+
+  #portfolio li {
+      background: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+  }
+
+  #portfolio li:hover {
+      background: #eee;
+  }
+
+  #portfolio a {
+      text-decoration: none;
+      color: #454545;
+  }
+  
