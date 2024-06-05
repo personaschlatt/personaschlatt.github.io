@@ -92,8 +92,8 @@ let animationDetails = {};
 
 var collectableList = {
   database: { image: "images/collectables/database.png" },
-  diamond: { image: "images/collectables/diamond-head.png" },
-  grace: { image: "images/collectables/grace-head.png" },
+  diamond: { image: "https://static.wikia.nocookie.net/chainsaw-man/images/7/7e/Denji_anime_design_2.png/revision/latest?cb=20220919121103" },
+  grace: { image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw0xRgLLA0x5pWOgXq3TZ2heP7dqK_KqW72w&s" },
   kennedi: { image: "images/collectables/kennedi-head.png" },
   max: { image: "images/collectables/max-head.png" },
   steve: { image: "images/collectables/steve-head.png" },
