@@ -64,10 +64,16 @@ for (i = 0; i <= dataShape.length; i++){
 }
 
   // TODO 3-a: add a function that handles the static display type
-  
+  function handleStatic(data){
+    setBackgroundWithObject(data)
+    animationDetails.displayType(1)
+  }
 
   // TODO 4-a: add a function that handles the good display type
-  
+  function handleGood (color, shape, repeat){
+    setBackgroundWithSimple(color, shape, repeat)
+    animalDetaills.displayType(2)
+  }
 
   // TODO 5-a: add a function that handles the bad display type
   
@@ -78,12 +84,13 @@ for (i = 0; i <= dataShape.length; i++){
 
   function staticDisplay() {
     // TODO 3-b: call your handleStatic function
-    
+    return(handleStatic)
   }
 
   function goodDisplay() {
     // TODO 4-b: call your handleGood function
-    
+    var currentShape = (handleGood)
+    animationDetails.displayType
   }
 
   function badDisplay() {
