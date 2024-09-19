@@ -36,50 +36,55 @@ $(document).ready(function () {
   /////////////////////////////////////////////////
   // ALL OF YOUR CODE SHOULD GO BELOW HERE ////////
   /////////////////////////////////////////////////
-// TODO 0 compleat
+  // TODO 0 compleat
 
   // TODO 1: create a new shape object and add it to the array
-  var shape ={
-  color: 
-  "blue",
-  shape:
-  "circle",
-repeat:
- 3,
-}
-dataShapes.push (shape)
+  var shape = {
+    color: "blue",
+    shape: "circle",
+    repeat: 3,
+  };
+  dataShapes.push(shape);
   // TODO 2: add a new property to all data shapes
- 
-for (i = 0; i <= dataShape.length; i++){ // created a loop that ittrates over the dataShapes 
-  var currentShape  //createing a new variable 
-  if (currentShapes = "red"){ // detecting if the currnt shape is red 
-    return (goodBehavior.currentShape("bounce")) // makes the current shape bounce 
+
+  for (i = 0; i <= dataShape.length; i++) {
+    // created a loop that ittrates over the dataShapes ; the last number that i will take is one too high
+    var currentShape; //createing a new variable ; you will want to assign a value to this variable. Use the dataShapes variable and bracket notation (you are iterating with this loop, so what goes in the brackets?)
+    if ((currentShapes = "red")) {
+      // detecting if the currnt shape is red ; this is *assigning" red, not checking if it is red. How can you change that?
+      return goodBehavior.currentShape("bounce"); // makes the current shape bounce ; see explanation at line 65
+    } else if ((currentShapes = "blue")) {
+      //detecting if the currnt shape is blue ; same issue as with the red check
+      return goodBehavior.currentShape("blink"); // makes the currnt shape blink ; see line 65
+    } else {
+      // detecting if crrentshape is any other color
+      return goodBehavior.currentShape("spin"); // makes the current shape spin ; see line 65
+    }
   }
-  else if (currentShapes = "blue" ){ //detecting if the currnt shape is blue
-    return (goodBehavior.currentShape("blink")) // makes the currnt shape blink
-  }
-  else{ // detecting if crrentshape is any other color
-    return (goodBehavior.currentShape("spin")) // makes the current shape spin
-  }
-}
-//
+  /* 
+Referring to lines 56, 59, and 62:
+This returns an error. You are not in a function and should not be returning. Furthermore, this is not how you assign a value to the 
+goodBehavior property of currentShape. Which one is the object? How do you use dot notation with an object and
+the property of that object? How do you assign a value? For that last question, keep in mind that it doesn't
+matter if the value being assigned is to a variable or to a property. There is only one symbol that means "assign".
+*/
   // TODO 3-a: add a function that handles the static display type
-  function handleStatic(data){
-    setBackgroundWithObject(data)
-    animationDetails.displayType(1)
+  function handleStatic(data) {
+    setBackgroundWithObject(data);
+    animationDetails.displayType(1);
   }
 
   // TODO 4-a: add a function that handles the good display type
-  function handleGood (color, shape, repeat){
-    setBackgroundWithSimple(color, shape, repeat)
-    animalDetaills.displayType(2)
+  function handleGood(color, shape, repeat) {
+    setBackgroundWithSimple(color, shape, repeat);
+    animalDetaills.displayType(2);
   }
 
   // TODO 5-a: add a function that handles the bad display type
-  function handleBad (data, repeat){
-    repeat + 1
-    handleBad(setBackgroundWithMixed)
-    animationDetails.displayType(3)
+  function handleBad(data, repeat) {
+    repeat + 1;
+    handleBad(setBackgroundWithMixed);
+    animationDetails.displayType(3);
   }
 
   /////////////////////////////////////////////////
@@ -88,20 +93,20 @@ for (i = 0; i <= dataShape.length; i++){ // created a loop that ittrates over th
 
   function staticDisplay() {
     // TODO 3-b: call your handleStatic function
-    return(handleStatic)
+    return handleStatic;
   }
 
   function goodDisplay() {
     // TODO 4-b: call your handleGood function
-    var currentShape = (handleGood)
-    animationDetails.displayType
+    var currentShape = handleGood;
+    animationDetails.displayType;
   }
 
   function badDisplay() {
     // TODO 5-b: call your handleBad function
-    var currentShape
-    var repeat
-    handleBad(currentShape , repeat)
+    var currentShape;
+    var repeat;
+    handleBad(currentShape, repeat);
   }
 
   /////////////////////////////////////////////////
