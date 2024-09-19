@@ -49,16 +49,16 @@ $(document).ready(function () {
 
   for (i = 0; i < dataShape.length; i++) {
     // created a loop that ittrates over the dataShapes ; the last number that i will take is one too high
-    var dataShape = (currentShape); //createing a new variable ; you will want to assign a value to this variable. Use the dataShapes variable and bracket notation (you are iterating with this loop, so what goes in the brackets?)
-    if ((currentShapes === "red")) {
+    var currentShape = (dataShapes); //createing a new variable ; you will want to assign a value to this variable. Use the dataShapes variable and bracket notation (you are iterating with this loop, so what goes in the brackets?)
+    if ((currentShape === "red")) {
       // detecting if the currnt shape is red ; this is *assigning" red, not checking if it is red. How can you change that?
-      currentShape.goodBehavior("bounce"); // makes the current shape bounce ; see explanation at line 65
-    } else if ((currentShapes === "blue")) {
+      goodBehavior.currentShape("bounce"); // makes the current shape bounce ; see explanation at line 65
+    } else if ((currentShape === "blue")) {
       //detecting if the currnt shape is blue ; same issue as with the red check
-      currentShape.goodBehavior("blink"); // makes the currnt shape blink ; see line 65
+      goodBehavior.currentShape("blink"); // makes the currnt shape blink ; see line 65
     } else {
       // detecting if crrentshape is any other color
-      currentShape.goodBehavior("spin"); // makes the current shape spin ; see line 65
+      goodBehavior.currentShape("spin"); // makes the current shape spin ; see line 65
     }
   }
   /* 
