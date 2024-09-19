@@ -76,7 +76,11 @@ for (i = 0; i <= dataShape.length; i++){
   }
 
   // TODO 5-a: add a function that handles the bad display type
-  
+  function handleBad (data, repeat){
+    repeat + 1
+    handleBad(setBackgroundWithMixed)
+    animationDetails.displayType(3)
+  }
 
   /////////////////////////////////////////////////
   // BUTTON HANDLERS BELOW HERE (3-b, 4-b, 5-b) ///
@@ -95,7 +99,9 @@ for (i = 0; i <= dataShape.length; i++){
 
   function badDisplay() {
     // TODO 5-b: call your handleBad function
-    
+    var currentShape
+    var repeat
+    handleBad(currentShape , repeat)
   }
 
   /////////////////////////////////////////////////
