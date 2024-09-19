@@ -47,18 +47,18 @@ $(document).ready(function () {
   dataShapes.push(shape);
   // TODO 2: add a new property to all data shapes
 
-  for (i = 0; i <= dataShape.length; i++) {
+  for (i = 0; i < dataShape.length; i++) {
     // created a loop that ittrates over the dataShapes ; the last number that i will take is one too high
-    var currentShape; //createing a new variable ; you will want to assign a value to this variable. Use the dataShapes variable and bracket notation (you are iterating with this loop, so what goes in the brackets?)
-    if ((currentShapes = "red")) {
+    var dataShape = (currentShape); //createing a new variable ; you will want to assign a value to this variable. Use the dataShapes variable and bracket notation (you are iterating with this loop, so what goes in the brackets?)
+    if ((currentShapes === "red")) {
       // detecting if the currnt shape is red ; this is *assigning" red, not checking if it is red. How can you change that?
-      return goodBehavior.currentShape("bounce"); // makes the current shape bounce ; see explanation at line 65
-    } else if ((currentShapes = "blue")) {
+      currentShape.goodBehavior("bounce"); // makes the current shape bounce ; see explanation at line 65
+    } else if ((currentShapes === "blue")) {
       //detecting if the currnt shape is blue ; same issue as with the red check
-      return goodBehavior.currentShape("blink"); // makes the currnt shape blink ; see line 65
+      currentShape.goodBehavior("blink"); // makes the currnt shape blink ; see line 65
     } else {
       // detecting if crrentshape is any other color
-      return goodBehavior.currentShape("spin"); // makes the current shape spin ; see line 65
+      currentShape.goodBehavior("spin"); // makes the current shape spin ; see line 65
     }
   }
   /* 
