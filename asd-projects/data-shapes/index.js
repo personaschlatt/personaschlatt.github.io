@@ -47,7 +47,7 @@ $(document).ready(function () {
   dataShapes.push(shape);
   // TODO 2: add a new property to all data shapes
 
-  for (i = 0; i < dataShape.length; i++) {
+  for (i = 0; i < dataShapes.length; i++) {
     // created a loop that ittrates over the dataShapes ; the last number that i will take is one too high
     var currentShape = (dataShapes); //createing a new variable ; you will want to assign a value to this variable. Use the dataShapes variable and bracket notation (you are iterating with this loop, so what goes in the brackets?)
     if ((currentShape === "red")) {
@@ -69,7 +69,7 @@ the property of that object? How do you assign a value? For that last question, 
 matter if the value being assigned is to a variable or to a property. There is only one symbol that means "assign".
 */
   // TODO 3-a: add a function that handles the static display type
-  function handleStatic(data) {
+  function handleStatic (data) {
     setBackgroundWithObject(data);
     animationDetails.displayType(1);
   }
