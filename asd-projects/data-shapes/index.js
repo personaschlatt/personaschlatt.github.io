@@ -50,19 +50,19 @@ repeat:
 dataShapes.push (shape)
   // TODO 2: add a new property to all data shapes
  
-for (i = 0; i <= dataShape.length; i++){
-  var currentShape
-  if (currentShapes = "red"){
-    return (goodBehavior.currentShape("bounce"))
+for (i = 0; i <= dataShape.length; i++){ // created a loop that ittrates over the dataShapes 
+  var currentShape  //createing a new variable 
+  if (currentShapes = "red"){ // detecting if the currnt shape is red 
+    return (goodBehavior.currentShape("bounce")) // makes the current shape bounce 
   }
-  else if (currentShapes = "blue" ){
-    return (goodBehavior.currentShape("blink"))
+  else if (currentShapes = "blue" ){ //detecting if the currnt shape is blue
+    return (goodBehavior.currentShape("blink")) // makes the currnt shape blink
   }
-  else{
-    return (goodBehavior.currentShape("spin"))
+  else{ // detecting if crrentshape is any other color
+    return (goodBehavior.currentShape("spin")) // makes the current shape spin
   }
 }
-
+//
   // TODO 3-a: add a function that handles the static display type
   function handleStatic(data){
     setBackgroundWithObject(data)
