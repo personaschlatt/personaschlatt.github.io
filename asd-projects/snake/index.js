@@ -10,8 +10,8 @@ var scoreElement = $("#score");
 var highScoreElement = $("#highScore");
 
 // TODO 4a: Create the snake, apple and score variables
-var snake = 0
-var apple = 0
+var snake = {}
+var apple = {}
 // Game Variables
 var score = 0
 
@@ -63,7 +63,6 @@ function init() {
  * On each update tick update each bubble's position and check for
  * collisions with the walls.
  */
-function update() {
   // TODO 5b: Fill in the update function's code block
   function update() {
     moveSnake();
@@ -76,7 +75,6 @@ function update() {
       handleAppleCollision();
     }
   }
-}
 
 function checkForNewDirection(event) {
   /* 
@@ -93,7 +91,7 @@ function checkForNewDirection(event) {
   else if (activeKey === KEY.RIGHT) {
     snake.head.direction = "right";
   } 
-  else if (activeKey === KEY. UP) {
+  else if (activeKey === KEY.UP) {
     snake.head.direction = "up";
   } 
   else if (activeKey === KEY.DOWN) {
@@ -129,15 +127,15 @@ function moveSnake() {
   }
  
   else if (snake.head.direction === "right") {
-    snake.head.column = snake.head.column ++;
+    snake.head.column = snake.head.column + 1;
   }
 
   else if (snake.head.direction === "up") {
-    snake.head.column = snake.head.column ++;
+    snake.head.row = snake.head.row - 1;
   }
 
    else if(snake.head.direction === "down") {
-    snake.head.column = snake.head.column - 1;
+    snake.head.row = snake.head.row + 1;
   }
   repositionSquare(snake.head);
 }
@@ -149,6 +147,13 @@ function hasHitWall() {
   
   HINT: What will the row and column of the snake's head be if this were the case?
   */
+if (snake.head.row < snake.head.row.length){
+ return true
+}
+if (snake.head.column < snake.head.column.length){
+
+  return true
+}
 
   return false;
 }
