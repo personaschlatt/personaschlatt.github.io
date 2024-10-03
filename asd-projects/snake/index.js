@@ -147,14 +147,18 @@ function hasHitWall() {
   
   HINT: What will the row and column of the snake's head be if this were the case?
   */
-if (snake.head.row < snake.head.row.length){
+if (snake.head.row < 20){
  return true
 }
-if (snake.head.column < snake.head.column.length){
+else if (snake.head.row < 0){
+  return true
+}
+  
+if (snake.head.column < 20){
 
   return true
 }
-
+else if(snake.head.column < 0){
   return false;
 }
 
@@ -329,5 +333,6 @@ function calculateHighScore() {
     alert("New High Score!");
   }
 
+else if(g) {
   return highScore;
 }
